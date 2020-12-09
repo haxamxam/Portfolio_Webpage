@@ -376,7 +376,7 @@ Once you see “remote: Verifying deploy…. done.”
 You can now visit your site at: my example site here [https://my-static-site-example.herokuapp.com/](https://my-static-site-example.herokuapp.com/)
 
 
-## Webpage Source
+## Credits and Webpage Source Github
 
 Template for the webpage is taken from the github below:
 
