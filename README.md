@@ -340,6 +340,42 @@ The optional section blocks have styling for h3 (the block title), h4, p, and ul
 * Fixed z-index / scrolling issue with mobile menu
 * Mobile menu now closes once a nav element is hit
 
+## Deploy Website to Heroku
+
+### Pre-requisites
+
+In order to deploy a site you need a couple of things:
+
+1. Have git installed
+2. Heroku Account – [sign up here](https://signup.heroku.com/)
+3. [Download the Heroku Toolbelt](https://devcenter.heroku.com/articles/heroku-cli) – a command line application for managing your Heroku account
+4. Run heroku login in your terminal or command prompt and fill in your Heroku credentials
+
+### Deploying on heroku 
+
+If you’re happy with the state of your application – create an index.php file. We can trick Heroku to deploy a static site by including 1 dynamic file.
+
+The index.php file will be served by Heroku before your index.html. We need to make the browser redirect from index.php to index.html. We only need to include one line of PHP code
+
+```php
+<?php include_once("index.html"); ?>
+```
+
+Then we’ll use the command line tool called git to initialize or create a version of the site you want to deploy. To do that run the command
+
+
+```bash
+git init
+git add .
+git commit -m "My site ready for deployment."
+heroku apps:create my-static-site-example
+git push heroku master
+```
+
+Once you see “remote: Verifying deploy…. done.”
+
+You can now visit your site at: my example site here [https://my-static-site-example.herokuapp.com/](https://my-static-site-example.herokuapp.com/)
+
 
 ## Contribution
 
