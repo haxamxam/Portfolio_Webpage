@@ -355,7 +355,7 @@ In order to deploy a site you need a couple of things:
 
 If you’re happy with the state of your application – create an index.php file. We can trick Heroku to deploy a static site by including 1 dynamic file.
 
-The index.php file will be served by Heroku before your index.html. We need to make the browser redirect from index.php to index.html. We only need to include one line of PHP code
+The index.php file will be served by Heroku before your index.html. We need to make the browser redirect from 'index.php' to 'index.html'. We only need to include one line of PHP code
 
 ```php
 <?php include_once("index.html"); ?>
