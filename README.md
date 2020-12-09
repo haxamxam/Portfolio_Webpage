@@ -378,7 +378,7 @@ You can now visit your site at: my example site here [https://my-static-site-exa
 
 ## Credits and Webpage Source Github
 
-Template for the webpage is taken from the github below:
+Template for the webpage is taken from Ryan Fitzgerald's github below:
 
 [Webpagesource](https://github.com/RyanFitzgerald/devportfolio).
 
